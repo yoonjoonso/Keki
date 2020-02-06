@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/Notes/NoteLineGroup.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Notes/NoteLine.tscn" type="PackedScene" id=2]
+
+[node name="NoteLineGroup" type="Control"]
+margin_right = 500.0
+margin_bottom = 500.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+type = 0
+
+[node name="NoteLineLeft" parent="." instance=ExtResource( 2 )]
+margin_left = 100.0
+margin_top = 100.0
+note_rotation = 270
+
+[node name="NoteLineUp" parent="." instance=ExtResource( 2 )]
+margin_left = 200.0
+margin_top = 100.0
+
+[node name="NoteLineDown" parent="." instance=ExtResource( 2 )]
+margin_left = 300.0
+margin_top = 100.0
+note_rotation = 180
+
+[node name="NoteLineRight" parent="." instance=ExtResource( 2 )]
+margin_left = 400.0
+margin_top = 100.0
+note_rotation = 90

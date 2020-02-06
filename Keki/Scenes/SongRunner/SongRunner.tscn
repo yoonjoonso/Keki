@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scenes/SongRunner/SongRunner.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/SongRunner/SongRunnerAudioPlayer.gd" type="Script" id=2]
+[ext_resource path="res://Scenes/Notes/NoteLineGroup.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Songs/Beep-09.ogg" type="AudioStream" id=4]
+
+[node name="SongRunner" type="Control"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SongRunnerAudioPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+script = ExtResource( 2 )
+
+[node name="NoteLineGroupLeft" parent="." instance=ExtResource( 3 )]
+
+[node name="NoteLineGroupRight" parent="." instance=ExtResource( 3 )]
+margin_left = 500.0
+margin_right = 540.0
+type = 1
