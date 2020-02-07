@@ -28,3 +28,4 @@ func create_note(direction):
 		$NoteLineUp.create_note()
 		#$NoteLineDown.create_note()
 		#$NoteLineRight.create_note()
+

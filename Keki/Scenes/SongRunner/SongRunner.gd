@@ -8,6 +8,10 @@ var bpm
 
 var time_to_slot = .76
 
+var good_hit = 0
+var bad_hit = 0
+var miss = 0
+
 func _ready():
 	hide()
 	set_process(false)
@@ -42,3 +46,17 @@ func exit():
 	set_process(false)
 	get_parent().stop_playing()
 
+
+func good_hit():
+	good_hit += 1
+	$GoodHitLabel.text = "Hit: " + str(good_hit)
+
+
+func bad_hit():
+	bad_hit += 1
+	$BadOrMissLabel.text = "Miss: " + str(bad_hit + miss)
+
+
+func miss():
+	miss += 1
+	$BadOrMissLabel.text = "Miss: " + str(miss + bad_hit)

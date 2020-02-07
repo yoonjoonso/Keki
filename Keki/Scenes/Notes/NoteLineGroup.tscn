@@ -13,20 +13,16 @@ __meta__ = {
 type = 0
 
 [node name="NoteLineLeft" parent="." instance=ExtResource( 2 )]
-margin_left = 100.0
-margin_top = 100.0
+position = Vector2( 100, 100 )
 note_rotation = 270
 
 [node name="NoteLineUp" parent="." instance=ExtResource( 2 )]
-margin_left = 200.0
-margin_top = 100.0
+position = Vector2( 200, 100 )
 
 [node name="NoteLineDown" parent="." instance=ExtResource( 2 )]
-margin_left = 300.0
-margin_top = 100.0
+position = Vector2( 300, 100 )
 note_rotation = 180
 
 [node name="NoteLineRight" parent="." instance=ExtResource( 2 )]
-margin_left = 400.0
-margin_top = 100.0
+position = Vector2( 400, 100 )
 note_rotation = 90

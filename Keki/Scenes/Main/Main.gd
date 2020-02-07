@@ -3,7 +3,7 @@ extends Node
 func _ready():
 	$SongBrowser.hide()
 	$SongBrowser.set_process(false)
-	load_songs("res://Songs/")
+	load_songs("../Songs/")
 
 
 func load_songs(path):
