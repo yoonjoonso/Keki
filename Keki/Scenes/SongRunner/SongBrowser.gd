@@ -9,6 +9,7 @@ var index = 0
 func select_song():
 	set_process(false)
 	current_song.song_selected()
+	get_parent().selection_audio()
 
 
 func _process(delta):
@@ -31,6 +32,7 @@ func browse(left):
 	var new_song = songs[index]
 	new_song.show()
 	current_song = new_song
+	get_parent().rotate_audio()
 
 func stop_browsing():
 	get_parent().stop_browsing()

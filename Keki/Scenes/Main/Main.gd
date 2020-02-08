@@ -40,12 +40,24 @@ func start_browsing():
 	$StartLabel.set_process(false)
 	$SongBrowser.show()
 	$SongBrowser.set_process(true)
+	selection_audio()
 
 func stop_browsing():
 	$SongBrowser.hide()
 	$SongBrowser.set_process(false)
 	$StartLabel.show()
 	$StartLabel.set_process(true)
+	cancel_audio()
 
 func _on_Label_start_label_pressed():
 	start_browsing()
+
+
+func selection_audio():
+	$SelectionAudioStream.play()
+
+func cancel_audio():
+	$CancelAudioStream.play()
+
+func rotate_audio():
+	$RotateAudioStream.play()

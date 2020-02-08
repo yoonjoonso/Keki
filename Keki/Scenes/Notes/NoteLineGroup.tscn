@@ -5,7 +5,7 @@
 
 [node name="NoteLineGroup" type="Control"]
 margin_right = 500.0
-margin_bottom = 500.0
+margin_bottom = 704.0
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -13,16 +13,24 @@ __meta__ = {
 type = 0
 
 [node name="NoteLineLeft" parent="." instance=ExtResource( 2 )]
-position = Vector2( 100, 100 )
+position = Vector2( 100, 130 )
+StartColor = Color( 0.8, 0, 0.823529, 1 )
+PressColor = Color( 0.258824, 0, 0.27451, 1 )
 note_rotation = 270
 
 [node name="NoteLineUp" parent="." instance=ExtResource( 2 )]
-position = Vector2( 200, 100 )
+position = Vector2( 200, 130 )
+StartColor = Color( 0.858824, 0, 0, 1 )
+PressColor = Color( 0.352941, 0, 0, 1 )
 
 [node name="NoteLineDown" parent="." instance=ExtResource( 2 )]
-position = Vector2( 300, 100 )
+position = Vector2( 300, 130 )
+StartColor = Color( 0.101961, 0, 0.811765, 1 )
+PressColor = Color( 0, 0.0196078, 0.333333, 1 )
 note_rotation = 180
 
 [node name="NoteLineRight" parent="." instance=ExtResource( 2 )]
-position = Vector2( 400, 100 )
+position = Vector2( 400, 130 )
+StartColor = Color( 0.0431373, 0.764706, 0, 1 )
+PressColor = Color( 0, 0.294118, 0.0313726, 1 )
 note_rotation = 90

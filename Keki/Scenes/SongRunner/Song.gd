@@ -12,6 +12,7 @@ var diff_maps
 
 var file_path
 var image_bytes
+var image_type
 var music_bytes
 
 var current_map
@@ -38,6 +39,15 @@ func load_info(content, file_path):
 		load_song()
 		
 		$Label.text = song_name
+		var texture = ImageTexture.new()
+		var image = Image.new()
+		if image_type == "png":
+			image.load_png_from_buffer(image_bytes)
+		if image_type == "jpg" || image_type == "jpeg":
+			image.load_jpg_from_buffer(image_bytes)
+		texture.create_from_image(image)
+		$Sprite.texture = texture
+		$Sprite.scale = Vector2(300,300) / texture.get_size()
 	else:
 		print("bad json")
 
@@ -66,6 +76,7 @@ func load_image():
 	if(file.is_open()):
 		image_bytes = file.get_buffer(file.get_len())
 	file.close()
+	image_type = image_path.get_extension()
 
 
 func song_selected():

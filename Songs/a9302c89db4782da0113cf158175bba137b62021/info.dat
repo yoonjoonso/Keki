@@ -1,0 +1,63 @@
+{
+  "_version": "2.0.0",
+  "_songName": "Hip",
+  "_songSubName": "",
+  "_songAuthorName": "Mamamoo",
+  "_levelAuthorName": "Lilqbunny & Bloodcloak",
+  "_beatsPerMinute": 138,
+  "_shuffle": 0,
+  "_shufflePeriod": 0.5,
+  "_previewStartTime": 12,
+  "_previewDuration": 10,
+  "_songFilename": "song.egg",
+  "_coverImageFilename": "cover.jpg",
+  "_allDirectionsEnvironmentName": "GlassDesertEnvironment",
+  "_environmentName": "DefaultEnvironment",
+  "_songTimeOffset": 0,
+  "_difficultyBeatmapSets": [
+    {
+      "_beatmapCharacteristicName": "Standard",
+      "_difficultyBeatmaps": [
+        {
+          "_difficulty": "Expert",
+          "_difficultyRank": 7,
+          "_beatmapFilename": "ExpertStandard.dat",
+          "_noteJumpMovementSpeed": 16,
+          "_noteJumpStartBeatOffset": 0,
+          "_customData": {
+            "_editorOffset": 180,
+            "_editorOldOffset": 180
+          }
+        },
+        {
+          "_difficulty": "ExpertPlus",
+          "_difficultyRank": 9,
+          "_beatmapFilename": "ExpertPlusStandard.dat",
+          "_noteJumpMovementSpeed": 16,
+          "_noteJumpStartBeatOffset": 0,
+          "_customData": {
+            "_editorOffset": 180,
+            "_editorOldOffset": 180
+          }
+        }
+      ]
+    },
+    {
+      "_beatmapCharacteristicName": "Lightshow",
+      "_difficultyBeatmaps": [
+        {
+          "_difficulty": "Expert",
+          "_difficultyRank": 7,
+          "_beatmapFilename": "Lightshow.dat",
+          "_noteJumpMovementSpeed": 12,
+          "_noteJumpStartBeatOffset": 0,
+          "_customData": {
+            "_difficultyLabel": "Blood's Lightshow",
+            "_editorOffset": 0,
+            "_editorOldOffset": 0
+          }
+        }
+      ]
+    }
+  ]
+}
